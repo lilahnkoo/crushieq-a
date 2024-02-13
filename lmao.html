@@ -1,0 +1,69 @@
+!DOCTYPE html>
+<html>
+<head>
+    <main class="container">
+        <img class="cat-gif" src="https://media.tenor.com/Rh2GZjVhteYAAAAi/tonton-friends-tonton.gif" alt="gif" />
+
+    <title>Crushie QnA</title>
+    <link rel="stylesheet" href="mestyl.css"/>
+    <script>
+        function askCrush() {
+            var crushName = document.getElementById('crushName').value;
+            var crushQA = document.getElementById('crushQA').value;
+
+            
+            var question = "Hey " + crushName + ", as an admirer of you. Peux-tu arranger ma vie amoureuse? (yes/no)";
+            var response = prompt(question);
+
+            if (response !== null) {
+                response = response.toLowerCase().trim();
+
+                
+                if (response === 'yes') {
+                   
+                    var question2 = "Yippew! Do u think that we are destiny? (yes/no)";
+                    var response2 = prompt(question2);
+
+                    if (response2 !== null) {
+                        response2 = response2.toLowerCase().trim();
+
+                        if (response2 === 'yes') {
+                           
+                            alert("Awesome! You've done it. Veux tu etre ma Valentine?");
+                        } else {
+                           
+                            var question3 = "Pas de soucis. So can we get to know each other first? (yes/no)";
+                            var response3 = prompt(question3);
+
+                            if (response3 !== null) {
+                                response3 = response3.toLowerCase().trim();
+
+                                if (response3 === 'yes') {
+                                    
+                                    alert("Super! Commençons par la plus petite chose.");
+                                } else {
+                                   
+                                    alert("That's fine. I hope you can find your perfect partner then!");
+                                }
+                            }
+                        }
+                    }
+                } else {
+                    
+                    alert("That's sad. Merci d'avoir joué avec moi.");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Heyyy, on peut jouer à ça un moment?</h1>
+    <h2>Enter your name:</h2>
+    <input type="text" id="crushName" placeholder="Enter">
+    <br><br>
+    <h3>Enter your savvy:</h3>
+    <input type="text" id="crushQA" placeholder="Enter">
+    <br><br>
+    <button onclick="askCrush()">Click here</button>
+</body>
+</html>
